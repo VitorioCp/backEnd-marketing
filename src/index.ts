@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000","https://marketin-site-frontend.gtrphk.easypanel.host/", "https://marketin-site-frontend.gtrphk.easypanel.host"],
+    origin: ["http://localhost:3000","https://marketin-site-frontend.gtrphk.easypanel.host/", "https://marketin-site-frontend.gtrphk.easypanel.host", "https://marketin-site-frontend.gtrphk.easypanel.host/login", "http://marketin_site_frontend:80/"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
