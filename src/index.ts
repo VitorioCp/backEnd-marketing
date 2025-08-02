@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000","https://course-manager-front-end-main.vercel.app"],
+    origin: ["http://localhost:3000","https://marketin-site-frontend.gtrphk.easypanel.host"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
