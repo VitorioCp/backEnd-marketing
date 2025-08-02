@@ -6,17 +6,15 @@ import prisma from "./db/prisma";
 
 const app = express();
 
-app.use(
-  cors({
-    origin: ["https://marketin-site-frontend.gtrphk.easypanel.host", "http://marketin_site_frontend:80/"], // Domínio do seu front-end
-    credentials: true, // Permite envio de cookies/headers de auth
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+const corsOptions = {
+  origin: ["https://marketin-site-frontend.gtrphk.easypanel.host"],
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
 
-app.options("*", cors());
-
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // Usa mesma config
 
 app.use(express.json());
 
