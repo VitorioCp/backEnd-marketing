@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://marketin-site-frontend.gtrphk.easypanel.host", // Domínio do seu front-end
+    origin: ["https://marketin-site-frontend.gtrphk.easypanel.host", "http://marketin_site_frontend:80/"], // Domínio do seu front-end
     credentials: true, // Permite envio de cookies/headers de auth
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
