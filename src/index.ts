@@ -10,7 +10,8 @@ const corsOptions = {
   origin: [
     "https://marketin-site-frontend.gtrphk.easypanel.host",
     "http://localhost:4000/",
-    "http://marketin_site_frontend:4000/"
+    "http://marketin_site_frontend:4000/",
+    "https://marketin-site-frontend.gtrphk.easypanel.host"
   ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
