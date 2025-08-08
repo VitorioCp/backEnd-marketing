@@ -7,7 +7,10 @@ import prisma from "./db/prisma";
 const app = express();
 
 const corsOptions = {
-  origin: ["https://marketin-site-frontend.gtrphk.easypanel.host", "http://marketin_site_frontend:4000/"],
+  origin: [
+    "https://marketin-site-frontend.gtrphk.easypanel.host",
+    "http://localhost:4000/",
+  ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
